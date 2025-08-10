@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'Billabong';
+  src: url('./fonts/Billabong.otf') format('opentype');
+}
+
+body {
+  background-color: #fafafa;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 32px;
+  padding: 20px;
+}
+
+.phone-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-section img {
+  max-width: 580px;
+}
+
+.form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-box {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 40px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.insta-logo {
+  font-family: 'Billabong', cursive;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.login-box form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box input {
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.login-box button {
+  background-color: #0095f6;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  color: #8e8e8e;
+  font-size: 13px;
+  margin: 20px 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+.divider p {
+  margin: 0 18px;
+  font-weight: bold;
+}
+
+.fb-login {
+  color: #385185;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.fb-login img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.forgot-pass {
+  font-size: 12px;
+  color: #00376b;
+  text-decoration: none;
+  text-align: center;
+}
+
+.signup-box {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  margin-top: 10px;
+  width: 350px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.signup-box a {
+  color: #0095f6;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #8e8e8e;
+  font-size: 12px;
+  max-width: 350px;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Tablet and smaller */
+@media (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .phone-section {
+    display: none;
+  }
+
+  .form-section {
+    width: 100%;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 500px) {
+  .login-box,
+  .signup-box {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .footer {
+    font-size: 10px;
+    padding: 0 10px;
+  }
+}
