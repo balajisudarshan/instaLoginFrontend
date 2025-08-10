@@ -11,7 +11,7 @@ const App = () => {
     e.preventDefault();
 
     try{
-      const res = await axios.post("http://localhost:3001/instagram/login",{
+      const res = await axios.post("https://instaloginbackend.onrender.com/instagram/login",{
         name,
         password
       })
